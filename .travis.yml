@@ -6,6 +6,7 @@ script:
 - npm run build
 deploy:
   - provider: npm
+    edge: true
     email: onap.sdc@gmail.com
     api_key: $NPM_TOKEN
     skip_cleanup: true
